@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              card: 'hsl(var(--card))',
+              'card-foreground': 'hsl(var(--card-foreground))',
+              popover: 'hsl(var(--popover))',
+              'popover-foreground': 'hsl(var(--popover-foreground))',
+              primary: 'hsl(var(--primary))',
+              'primary-foreground': 'hsl(var(--primary-foreground))',
+              secondary: 'hsl(var(--secondary))',
+              'secondary-foreground': 'hsl(var(--secondary-foreground))',
+              muted: 'hsl(var(--muted))',
+              'muted-foreground': 'hsl(var(--muted-foreground))',
+              accent: 'hsl(var(--accent))',
+              'accent-foreground': 'hsl(var(--accent-foreground))',
+              destructive: 'hsl(var(--destructive))',
+              'destructive-foreground': 'hsl(var(--destructive-foreground))',
+              border: 'hsl(var(--border))',
+              input: 'hsl(var(--input))',
+              ring: 'hsl(var(--ring))',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --background: 48 43% 97%; /* #f8f7f2 */
+        --foreground: 222 47% 11%; /* #1a202c */
+        --card: 48 43% 97%;
+        --card-foreground: 222 47% 11%;
+        --popover: 48 43% 97%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 215 50% 55%; /* #4a6fa5 */
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96%;
+        --secondary-foreground: 222 47% 11%;
+        --muted: 210 40% 96%;
+        --muted-foreground: 215 25% 45%;
+        --accent: 210 40% 96%;
+        --accent-foreground: 222 47% 11%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214 32% 91%;
+        --input: 214 32% 91%;
+        --ring: 215 50% 55%;
+      }
+      .dark {
+        --background: 222 47% 11%; /* #1a202c */
+        --foreground: 210 40% 98%; /* #f8fafc */
+        --card: 222 47% 14%; /* #1f2937 */
+        --card-foreground: 210 40% 98%;
+        --popover: 222 47% 11%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 217 60% 65%; /* #60a5fa */
+        --primary-foreground: 222 47% 11%;
+        --secondary: 217 33% 25%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217 33% 25%;
+        --muted-foreground: 215 28% 65%;
+        --accent: 217 33% 25%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 63% 51%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217 33% 25%;
+        --input: 217 33% 25%;
+        --ring: 217 60% 65%;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <!-- Google AdSense - IMPORTANT: Replace 'ca-pub-XXXXXXXXXXXXXXXX' with your actual publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-foreground transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
